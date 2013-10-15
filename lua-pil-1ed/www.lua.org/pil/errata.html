@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Programming in Lua - errata</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../lua.css">
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<STYLE TYPE="text/css">
+span.note {
+	color: gray ;
+	font-size: small ;
+	xdisplay: block;
+	margin-left: 1em ;
+}
+
+dt {
+	xfont-size: small ;
+	margin-bottom: 0.5em ;
+}
+
+dd {
+	margin-bottom: 1em ;
+}
+</STYLE>
+</HEAD>
+
+<BODY>
+
+<HR>
+<H1>
+<A HREF="../home.html"><IMG SRC="../images/logo.gif" ALT="Lua" BORDER=0></A>
+Programming in Lua &ndash; errata
+</H1>
+
+<A HREF="#3ed">third edition</A>
+&middot;
+<A HREF="#2ed">second edition</A>
+&middot;
+<A HREF="#1ed">first edition</A>
+&middot;
+<A HREF="./">book</A>
+
+<H2><A NAME="3ed">Third edition</A></H2>
+<A HREF="http://www.amazon.com/exec/obidos/ASIN/859037985X/lua-pilindex-20">
+<IMG TITLE="buy at the Lua Bookstore at Amazon" SRC="capa3.jpg" ALT="" BORDER=1 ALIGN="right" HEIGHT=100></A>
+
+<dl>
+
+<dt>page 13, second line
+<SPAN CLASS="note">reported by Martin Büttner</SPAN>
+<dd>
+<code>\x\hh</code> should be <code>\xhh</code>.
+
+<dt>page 35, fifth line
+<SPAN CLASS="note">reported by Tony Booer</SPAN>
+<dd>
+"basic Lua library>"
+should be
+"basic Lua library.".
+
+<dt>page 59, exercise 6.1
+<SPAN CLASS="note">reported by Jan Sedlák</SPAN>
+<dd>
+The description of the problem is not very precise.
+It should read like this:
+"Write a function <code>integral</code> that
+receives a function <code>f</code>
+and returns its definite integral function.
+This returned function,
+when given two values <code>a</code> and <code>b</code>,
+returns
+an approximation of the integral of <code>f</code>
+from <code>a</code> to <code>b</code>."
+
+<dt> page 66, second paragraph
+<span class="note"></span>
+<dd>
+There is this note "As we already mentioned,
+linked lists are not frequent in Lua,
+but sometimes we need them."
+However, the book did not mention linked lists before this point.
+
+<dt>page 131, second-to-last line
+<SPAN CLASS="note">reported by Martin Büttner</SPAN>
+<dd>
+<code>__leq</code> should be <code>__le</code>.
+
+<dt>page 147
+<SPAN CLASS="note">reported by Peter Kazmier</SPAN>
+<dd>
+"We can load it whit" should be "We can load it with".
+
+<dt>page 158, listing 15.2
+<SPAN CLASS="note">reported by Tony Booer</SPAN>
+<dd>
+<pre>
+local i = complex.new(0, 1)
+</pre>
+should be
+<pre>
+local i = new(0, 1)
+</pre>
+
+<dt>page 177, title of section 17.2
+<SPAN CLASS="note"></SPAN>
+<dd>
+The word "Memoize" (instead of "Memorize") is used on purpose, to refer
+to the term "Memoization" (which means "Memorization",
+but it is already established).
+
+<dt>page 183, last line
+<SPAN CLASS="note">reported by Pete Hollobon</SPAN>
+<dd>
+"anchors it" should be "anchor it".
+
+<dt>page 184, first paragraph
+<SPAN CLASS="note">reported by Pete Hollobon</SPAN>
+<dd>
+"make the finalizer creates" should be "make the finalizer create".
+
+<dt>page 192, last fragment
+<SPAN CLASS="note">reported by Martin Büttner</SPAN>
+<dd>
+<pre>
+if bit32.or(a, b) == bit32.or(-1) then
+</pre>
+should be
+<pre>
+if bit32.bor(a, b) == bit32.bor(-1) then
+</pre>
+
+<dt>page 198, exercise 20.1
+<SPAN CLASS="note">reported by Patrick</SPAN>
+<dd>
+There is a missing closing parenthesis in the
+print statement.
+
+<dt>page 217, fourth paragraph
+<span class="note">reported by Ana Lúcia de Moura</span>
+<dd>
+"multi-line sequences" should be "multi-byte sequences".
+
+<dt>page 226, last paragraph
+<span class="note"></span>
+<dd>
+The observation "as long as the pattern does not contain a zero byte"
+does not apply to Lua 5.2.
+Lua 5.2 handles zero bytes in patterns without problems.
+
+<dt>page 282, third-to-last paragraph
+<SPAN CLASS="note">reported by Martin Büttner</SPAN>
+<dd>
+<code>lua_pcall</code> should be <code>lua_call</code>.
+
+</dL>
+
+<H2><A NAME="2ed">Second edition</A></H2>
+
+<P>
+No errata available.
+
+<H2><A NAME="1ed">First edition</A></H2>
+
+<P>
+See
+<A HREF="http://www.inf.puc-rio.br/~roberto/book/errata1.html">this page</A>
+for the errata.
+
+<HR>
+<SMALL CLASS="footer">
+Last update:
+Fri Jul 19 11:43:22 BRT 2013
+</SMALL>
+<!--
+Last change: new corrections
+-->
+
+</BODY>
+</HTML>
